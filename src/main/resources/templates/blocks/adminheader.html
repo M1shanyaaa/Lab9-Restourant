@@ -1,13 +1,33 @@
+<!--
+    Header Fragment
+    This fragment defines the layout of the header for the website. It includes:
+    1. A navigation link to manipulate orders.
+    2. A "Logout" button on the right side of the navigation bar for logging out.
+
+    The header section is built using Bootstrap classes for responsive and styled layout.
+-->
+
 <div th:fragment="header">
+    <!-- Container for the header content -->
     <div class="container">
+        <!-- Header section with flexbox layout -->
         <header class="d-flex justify-content-between align-items-center py-3">
+
+            <!-- Left side navigation menu with link to manipulate orders -->
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="/manipulateorder" class="nav-link">Orders</a></li>
+                <!-- Link to Manipulate Orders page -->
+                <li class="nav-item">
+                    <a href="/manipulateorder" class="nav-link">Orders</a>
+                </li>
             </ul>
+
+            <!-- Right side navigation menu for Logout option -->
             <ul class="nav nav-pills ms-auto">
-                <li class="nav-item"><a href="/login" class="nav-link">Logout</a></li>
+                <!-- Link to Login page (Logout functionality) -->
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">Logout</a>
+                </li>
             </ul>
         </header>
     </div>
 </div>
-
